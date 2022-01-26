@@ -1,0 +1,153 @@
+
+
+
+
+
+
+
+
+
+
+
+.Intro {
+    background-image: url("images/503753E0-DA54-49B3-A7D9-50C1A547B644.jpeg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+justify-content: space-between;
+}
+
+.Intro-block {
+    width: 40vw;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+align-items: center;
+
+}
+
+.Info {
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.black-class {
+    color: white;
+}
+.img-red {
+    width: 23vw;
+    height: 335px;
+}
+
+.red-1 {
+    float: right;
+    margin: 0 0 30px 30px;
+    width: 490px;
+    height: 365px;
+}
+
+.red-2 {
+    float: left;
+    margin: 30px 30px 30px 0;
+    width: 490px;
+    height: 350px;
+}
+
+
+h2 {
+    font-size: 50px;
+    margin: 23px;
+    align-self: center;
+}
+
+.text-1 {
+    margin-bottom: 40px;
+}
+.usage {
+    text-align: center
+}
+
+.footer {
+    background-color: #630c0c;
+}
+
+.img-6 {
+    width: 400px;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1500px) {
+    .photos {
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-red {
+        width: 40vw;
+        height: 44vh;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .Inf-block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .img-wr {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-red {
+        width: 70vw;
+        height: 64vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Intro-block {
+        width: 70vw;
+        padding-bottom: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .img-red{
+        width: 64vw;
+        height: 51vh;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .img-red{
+        height: 46vh;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100vw;
+    width: 100vw;
+}
+
+html {
+    color: black;
+    
+}
+.First-Block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #dddeec;
+}
+.Logo {
+    background-image: url("../images/logo1.png");
+}
+
+
+.transcriptGradient {
+	
+	background: -webkit-linear-gradient(rgba(221, 222, 236, 0) 20%, rgba(221, 222, 236, 1) 100%);
+	background: linear-gradient(to bottom, rgba(221, 222, 236, 1) 20%, rgba(221, 222, 236, 0) 100%);
+}
+
+.disadvantage {
+    display: flex;
+    justify-content: space-around;
+    width: 45vw;
+    height: 30vh;
+}
+
+
+.disadvantage-5 {
+    width: 70vw;
+    align-self: center;
+}
+
+
+
+.disadvantages {
+    background-color: #dddeec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+.picture-number {
+    background-image: url(../images/dis1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70vw;
+}
+
+.picture-number-2 {
+    background-image: url(../images/dis2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 55vw;
+}
+
+.picture-number-3 {
+    background-image: url(../images/dis3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70vw;
+}
+
+
+.picture-number-4 {
+    background-image: url(../images/dis4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40vw;
+}
+
+
+.picture-number-5 {
+    background-image: url(../images/dis5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 135vw;
+}
+
+
+
+
+.disadvantages-line {
+    display: flex;
+    justify-content: space-around;
+    width: 95vw;
+    margin: 27px 13px;
+
+}
+
+a {
+    color: black;
+}
+
+.Introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding-bottom: 5vh;
+}
+
+.Intro_Wr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45vw;
+    padding-right: 40px;
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 0.06em;
+}
+
+
+.ways-background {
+    background-color: #2670ba;
+    width: 100%;
+    height: 100%;
+}
+
+.ways-examples {
+    height: 90%;
+    padding: 16% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.way {
+    width: 17vw;
+    height: 40vh;
+    background-color: white;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 10px rgba(1, 6, 21, 0.3);
+}
+
+.way-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+.way-img {
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+}
+
+
+.ways {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+   align-items: center;
+}
+
+
+.ways-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: max-content;
+}
+
+
+.way-about {
+    display: none;
+}
+
+.way-outline {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 50%;
+    padding: 2px 16px;
+    align-items: center;
+}
+
+.way-description {
+    line-height: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+
+}
+
+ .navigation-item a::before {
+        color: #01386e;
+      }
+
+      
+.footer {
+    background-color: #0c143f;
+}
+
+.menu__box {
+    background-color: #dddeec;
+    
+    }
+
+   
+
+
+.menu__item {
+    color: black
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn  > span::after {
+    background-color: black;
+}
+
+
+.strip1 {
+    background-color: rgb(67, 69, 66);
+    height: 1px;
+    width: 25px;
+    margin-top: 6px;
+}
+
+.ways-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.gradient-button-adapt {
+    display: none;
+    text-decoration: none;
+        color: white;
+        font-size: 0.9rem;
+        width: 79%;
+        height: 17%;
+        cursor: pointer;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        text-align: center;
+        border-radius: 10px;
+        letter-spacing: 2px;
+        background-image: linear-gradient(to right, #e1f0ff 0%, #3f98f1 51%, #051774 100%);
+        opacity: 0.8;
+        background-size: 200% auto;
+        transition: .5s;
+
+}
+
+.gradient-button-adapt:hover {
+    background-position: right center;
+  }
+
+
+.gradient-button {
+    
+        text-decoration: none;
+        color: white;
+        font-size: 0.9rem;
+        cursor: pointer;
+        width: 79%;
+    padding-bottom: 1%;
+    height: 13%;
+        padding-top: 4%;
+        text-align: center;
+        border-radius: 10px;
+        letter-spacing: 2px;
+        background-image: linear-gradient(to right, #e1f0ff 0%, #3f98f1 51%, #051774 100%);
+        opacity: 0.8;
+        background-size: 200% auto;
+        transition: .5s;
+    
+}
+
+.gradient-button:hover {
+    background-position: right center;
+  }
+.close-animaion-btn {
+    width: 8vw;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, #e1f0ff 0%, #3f98f1 51%, #051774 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px; 
+    opacity: 0.8;
+    border: none;
+    margin-bottom: 10px;
+    background-size: 200% auto;
+    transition: .5s;
+
+
+}
+
+.close-animaion-btn:hover {
+    background-position: right center;
+}
+
+ .p_text_style {
+    background-color: white;
+    box-shadow: 3px 3px 10px rgb(1 6 21 / 30%);
+    width: 90vw;
+    padding: 20px;
+    align-self: center;
+    height: 10vw;
+    opacity:0;
+    transition: 0.8s; /*Скорость перехода состояния элемента*/
+animation: show 0.9s 1; /* Указываем название анимации, её время и количество повторов*/
+animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+animation-delay: 0.1s; /* Задержка перед началом */
+}
+
+@keyframes show{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+    }
+
+
+
+h3 {
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.06em;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.06em;
+    padding: 10px;
+    text-align: center;
+}
+
+.disadvantages {
+    background-color: #dddeec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.dis-wr {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin-top: 10vh;
+}
+
+p1 {
+    font-size: 1.3rem;
+}
+
+.p_text_style_for_lines {
+    display: none;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgb(1 6 21 / 30%);
+    padding: 20px;
+    align-self: center;
+    height: 10vw;
+    opacity:0;
+    transition: 0.8s; 
+animation: show 0.9s 1; 
+animation-fill-mode: forwards;
+animation-delay: 0.1s; 
+}
+      
+.p_text_style_for_lines_2 {
+    display: none;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgb(1 6 21 / 30%);
+    padding: 20px;
+    align-self: center;
+    height: 10vw;
+    opacity:0;
+    transition: 0.8s; 
+animation: show 0.9s 1; 
+animation-fill-mode: forwards;
+animation-delay: 0.1s; 
+}
+    
+    
+
+.pict {
+    margin-top: 5vh;
+    width: 45vw;
+    height: 80vh;
+    margin-right: 5vw;
+    align-self: center;
+    background-image: url("../images/Anim-pr.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.line-ways {
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+
+ 
+.p-last {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .disadvantages-line {
+        flex-direction: column;
+        width: 85vw;
+    }
+
+    .disadvantage {
+        width: auto;
+    }
+
+    .info {
+        align-self: center;
+    }
+
+    .picture-number-5 {
+        width: 170vw;
+    }
+
+    .disadvantage-5 {
+        align-self: auto;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    .ways-wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+    .p_text_style {
+        display: none;
+    }
+
+    .p_text_style_for_lines {
+        width: 73%;
+        display: block;
+    }
+
+   .gradient-button {
+       display: none;
+   }
+
+
+   .gradient-button-adapt {
+       display: block;
+   }
+
+
+    .disadvantages-line { 
+
+        margin: 0;
+    }
+        .Introduction {
+            flex-direction: column;
+        }
+        .Intro_Wr {
+            padding-bottom: 12vh;
+            width: 80vw;
+        }
+        .pict {
+            height: 51vh;
+            margin-top: 0;
+            width: 55vw;
+        }
+    
+    .way {
+        flex: auto;
+    } 
+
+    .line-ways {
+        width: 80vw;
+    }
+    
+    .img-last {
+        width: 50%;
+        height: auto;
+} 
+
+.way {
+    height: auto;
+}
+
+
+
+.way-outline-last {
+    flex-direction: row;
+    padding: 0px 15px;
+    height: auto;
+}
+
+.way-outline-last .gradient-button{
+    display: none;
+}
+
+.way-last {
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.p-last {
+    display: block;
+    padding: 35px;
+}
+/*.p_text_style {
+    display: none
+}*/
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+
+
+    .p_text_style_for_lines {
+       display: none;
+    }
+
+
+.gradient-button-adapt {
+    display: none;
+}
+
+    html {
+        font-size: 13px;
+    }
+    .line-ways {
+        flex-direction: column;
+    }
+.way {
+    width: auto;
+}
+
+.strip1 {
+
+    display: none;
+}
+
+.way-outline {
+    flex-direction: column;
+    padding: 0px 15px;
+    height: auto;
+}
+
+.way-container {
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.way-about {
+    display: block;
+    padding: 35px;
+}
+
+
+.way-description {
+    margin-top: 35px;
+    align-self: center;
+
+}
+
+
+
+.way-outline-last {
+    flex-direction: column;
+    
+}
+
+.way-last {
+    flex-direction: column;
+    
+   
+}
+
+.img-last {
+    height: 50%;
+    width: 100%;
+}
+.p_text_style {
+    display: none
+}
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+    html {
+        font-size: 11px;
+    }
+
+    .disadvantages-line {
+        height: fit-content;
+    }
+
+.pict {
+    height: 45vh;
+    width: 80vw;
+    
+}
+
+.info {
+    align-self: auto;
+}
+
+font {
+    font-size: 2.2rem;
+}
+
+.disadvantage {
+    width: auto;
+    height: 21vh;
+}
+
+.way-description {
+   
+    font-size: 1.3rem;
+    
+}
+
+.disadvantage-5 {
+    height: 44vh;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+.disadvantage {
+    width: auto;
+    height: 30vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.disadvantage-5 {
+ 
+    height: 50vh;
+}
+
+}

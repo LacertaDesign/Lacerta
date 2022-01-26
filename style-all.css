@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+    font-family: Arial, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+
+.preloader {
+   
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+    background: #0c143f;
+    
+    z-index: 1001;
+  }
+
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes preloader-bounce {
+
+    0%,
+    100% {
+      transform: scale(0);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+  }
+
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+
+  .loaded .preloader {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+.Logo {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Roof {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    position: fixed;
+    z-index: 20;
+}
+
+
+.footer {
+    height: 50px;
+}
+
+
+.transcriptGradient {
+	width: 100vw;
+	height: 70px;
+	position:absolute;
+	top:0;
+	left: 0;
+}
+
+
+.Roof-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100vw;
+padding-top: 8px;
+z-index: 1;
+
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+      
+}
+
+
+.navigation-item a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .navigation-item a::before {
+    position: absolute;
+    content: attr(data-content); 
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 275ms ease;
+    width: 0;
+    white-space: nowrap;
+  }
+
+  .navigation-item a:hover::before {
+    width: 100%;
+  }
+
+
+
+
+.navigation-item{
+    list-style-type: none;
+    margin-right: 3vw;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    top: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: -100%;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    transition-duration: 0.8s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition-duration: 0.25s;
+}
+.menu__item:hover {
+    background-color: #879bff;
+}
+
+
+
+
+@media screen and (max-width: 1050px) {
+
+  html {
+    font-size: 18px;
+}
+
+.menu {
+  display: none;
+}
+
+.hamburger-menu {
+  display: block;
+}
+
+
+
+  
+ }
+
+
+
+

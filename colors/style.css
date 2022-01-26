@@ -1,0 +1,191 @@
+.red {
+    background-color: #b04343;
+}
+.white{
+    background-color: white;
+}
+.green {
+    background-color: #649772;
+}
+.yellow {
+    background-color: #ecd89c;
+}
+.orange {
+    background-color: #e79775;
+}
+.black {
+    background-color: black;
+}
+.blue {
+    background-color: #6789a3;
+}
+.purple {
+    background-color: #7b67a3;
+}
+.brown {
+    background-color: #603008;
+}
+
+html {
+    background-color: #dddeec;
+}
+
+
+button {
+    transition: all 0.4s ease;
+}
+
+
+.red:hover {
+    background-color: #9b1d1d;
+}
+.white:hover{
+    background-color: rgb(175, 175, 175);
+}
+.green:hover {
+    background-color: #236e57;
+}
+.yellow:hover {
+    background-color: #cdaa42;
+}
+.orange:hover {
+    background-color: #c25a2e;
+}
+.black:hover {
+    background-color: #303030;
+}
+.blue:hover {
+    background-color: #225277;
+}
+.purple:hover {
+    background-color: #492c81;
+}
+.brown:hover {
+    background-color: #3a1c03;
+}
+
+
+
+
+
+.pict {
+    margin-top: 3vh;
+    width: 40vw;
+    height: 80vh;
+    margin-right: 5vw;
+    align-self: center;
+    background-image: url("Color-pr.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50px;
+
+}
+
+
+.container {
+  transform: translate(-50%, -50%);
+  display: flex;
+width: 180px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+margin-right: 6vw;
+margin-top: 10vh;
+align-self: flex-start;
+}
+
+
+
+
+.btn {
+border-radius: 0;
+margin: 0;
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+width: 180px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: black;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+width: 180px;
+  height: 60px;
+  transition: 1s ease-in-out;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover svg {
+width: 180px;
+  height: 60px;
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+width: 180px;
+  height: 60px;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+
+
+
+.Info_colors {
+    background-color: #dddeec;
+}
+
+
+
+
+.Men_Wo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sex {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.v_line {
+    height: 37vh;
+    width: 0.5vw;
+    background-color: #eff2fa;
+}
+.amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-left: 17px;
+    z-index: 10;
+    padding-right: 0px;
+    padding-top: 5vh;
+}
+.amount-wr {
+    width: 100vw;
+    height: 50vh;
+    background-color: #dddeec;
+}
+
+
+
+

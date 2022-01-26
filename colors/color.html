@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Цвет</title>
+    <link rel="stylesheet" href="../style-all.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="color-red.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div id='app'>
+        <div class="Roof">
+            <div class="transcriptGradient"></div>
+            <div class="Roof-container">
+                <a href="../index.html">
+                    <div class="Logo"></div>
+                </a>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="color.html">Цвет</a></li>
+                        <li><a class="menu__item" href="../fonts/fonts.html">Шрифт</a></li>
+                        <li><a class="menu__item" href="../objects/objects.html">Объекты</a></li>
+                        <li><a class="menu__item" href="../animation/animation.html">Анимация</a></li>
+                    </ul>
+                </div>
+                <ul class="menu">
+                    <li class="navigation-item">
+                        <a data-content="Цвет" href="color.html">Цвет</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a data-content="Шрифт" href="../fonts/fonts.html">Шрифт</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a data-content="Объекты" href="../objects/objects.html">Объекты</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a data-content="Анимация" href="../animation/animation.html">Анимация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="First-Block">
+            <div class="Introduction">
+                <div class="pict"></div>
+
+
+                <div class="Intro_Wr">
+                    <h1>Цвета</h1>
+                    <p class="Intro-colors">
+                        Цвет - самый важный элемент дизайна, отражающий настроение и стиль. Правильный цвет может
+                        повысить эффективность продажи продуктов и идей на 50-85%, а так как в интернете покупатель
+                        видит в основном визуальную составляющую, то для сайтов важность цвета возрастает до 60-90%.
+                        Какие цвета нужно выбирать для дизайна вашего сайта, а от каких лучше отказаться? Что может
+                        оттолкнуть посетителя вашего сайта? Давайте подробно рассмотрим те моменты, которые следует
+                        учитывать при создании сайтов, т.к. именно они оказывают самое большое влияние на цветовые
+                        предпочтения, - социально-культурный, возрастной и гендерный аспекты. </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="color_buttons">
+                <div class="c-b-line">
+                    <button class="orange btn-color" id="color-btn" @click='filterColor(1)'><a href="#rrrr"></a></button>
+                    <button class="green btn-color" @click='filterColor(2)'><a href="#rrrr"></a></button>
+                    <button class="blue btn-color"  id="color-btn-1" @click='filterColor(3)'><a href="#colors-block"></a></button>
+                    <button class="yellow btn-color" @click='filterColor(4)'><a href="#colors-block"></a></button>
+                </div>
+                <div class="c-b-line">
+                    <button class="red btn-color" @click='filterColor(5)'><a href="#colors-block"></a></button>
+                    <button class="black btn-color" @click='filterColor(6)'><a href="#colors-block"></a></button>
+                    <button class="white btn-color" @click='filterColor(7)'></button>
+                    <button class="purple btn-color" @click='filterColor(8)'></button>
+                    <button class="brown btn-color" @click='filterColor(9)'></button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div v-if='showColors'>
+            <main-color></main-color>
+        </div>
+
+        <div v-if='showColor'  id="colors-block">
+            <color-comp :color='color' @open-main-colors='openMainColors'></color-comp>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/components/MainColor.js"></script>
+    <script src="js/components/ColorComp.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#color-btn").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+        $(document).ready(function(){
+            $("#color-btn-1").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+        </script>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>

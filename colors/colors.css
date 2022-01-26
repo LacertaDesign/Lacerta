@@ -1,0 +1,230 @@
+
+html {
+    color: black;
+}
+
+
+
+
+
+.color_buttons {
+justify-content: space-around;
+display: flex;
+position: absolute;
+bottom: 0;
+align-self: center;
+}
+
+
+
+
+
+button {
+border: none;
+text-decoration: none;
+transition: all 0.3s ease;
+border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        margin: 10px;
+
+}
+
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn  > span::after {
+    background-color: black;
+}
+
+
+.menu__box {
+background-color: rgb(239, 242, 250);
+
+}
+
+
+.First-Block {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #eff2fa;
+}
+.Logo {
+    
+    background-image: url("images/logo1.png");
+    
+}
+
+.transcriptGradient {
+	background: -webkit-linear-gradient(rgba(239, 242, 250, 0) 0%, rgba(239, 242, 250, 1) 100%);
+	background: linear-gradient(to bottom, rgba(239, 242, 250, 1) 0%, rgba(239, 242, 2506, 0) 100%);
+}
+
+
+a {
+    color: black;
+}
+
+
+.Introduction {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Intro_Wr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45vw;
+    margin-right: 3vw;
+    margin-top: 16vh;
+
+
+
+}
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 0.06em;
+}
+
+p {
+    padding: 30px
+}
+
+.Intro-colors {
+    padding: 0;
+}
+
+.Info_colors {
+    background-color: #dddeec;
+
+}
+
+.Colors_about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+.line {
+    width: 150px;
+    height: 2px;
+    background-color: #eff2fa;
+    margin: 20px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.06em;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.color_buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.y {
+    width: 30vw;
+    height: 29vw;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+
+}
+
+
+
+
+@media screen and (max-width: 1110px) {
+
+
+
+    .Colors_about {
+        flex-direction: column;
+    }
+    .color-line {
+        display: flex;
+        width: 70vw;
+        justify-content: space-around;
+    }
+    .Men_Wo {
+        flex-direction: column;
+    }
+    .pict {
+        height: 55vh;
+        margin-top: 0;
+        width: 58vw;
+    }
+    .v_line {
+        height: 0.8vh;
+        width: 80vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    .Colors_about {
+        padding-top: 10vh;
+    }
+    
+    .Intro_Wr {
+        margin-bottom: 12vh;
+        width: 80vw;
+        padding-right: 0;
+    }
+    .desc {
+        width: 85vw;
+    }
+
+
+   
+
+    
+
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .First-Block {
+        justify-content: center;
+    }
+
+
+    .Section {
+        margin: 2vh;
+    }
+
+    .amount {
+        padding: 0;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+    }
+
+
+}
+
+
+
+
