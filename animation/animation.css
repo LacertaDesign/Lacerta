@@ -10,6 +10,7 @@
 
 html {
     color: black;
+    width: 100vw;
     
 }
 .First-Block {
@@ -34,7 +35,7 @@ html {
     display: flex;
     justify-content: space-around;
     width: 45vw;
-    height: 30vh;
+    height: auto;
 }
 
 
@@ -580,7 +581,7 @@ animation-delay: 0.1s;
 }
 
     html {
-        font-size: 13px;
+        font-size: 19px;
     }
     .line-ways {
         flex-direction: column;
@@ -611,6 +612,13 @@ animation-delay: 0.1s;
     padding: 35px;
 }
 
+    h1 {
+        font-weight: bold;
+        font-size: 3rem;
+        letter-spacing: 0.06em;
+    }
+
+
 
 .way-description {
     margin-top: 35px;
@@ -639,13 +647,19 @@ animation-delay: 0.1s;
     display: none
 }
 
+    .pict {
+        height: 34vh;
+        margin-top: 0;
+        width: 55vw;
+    }
+
 
 }
 
 @media screen and (max-width: 450px) {
 
     html {
-        font-size: 11px;
+        font-size: 16px;
     }
 
     .disadvantages-line {
@@ -668,7 +682,7 @@ font {
 
 .disadvantage {
     width: auto;
-    height: 21vh;
+    height: auto;
 }
 
 .way-description {
@@ -677,9 +691,7 @@ font {
     
 }
 
-.disadvantage-5 {
-    height: 44vh;
-}
+
 
 }
 

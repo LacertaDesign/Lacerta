@@ -188,4 +188,13 @@ width: 180px;
 
 
 
+@media screen and (max-width: 1110px) {
+
+    .sex {
+        width: 90vw;
+    }
+}
+
+
+
 

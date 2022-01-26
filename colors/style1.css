@@ -304,7 +304,7 @@ top: -5vh;
 @media screen and (max-width: 550px) {
 
   html {
-      font-size: 11px;
+      font-size: 14px;
   }
   
   .Introduction {
@@ -370,7 +370,7 @@ top: -5vh;
       height: 43vh;
   }
 .Intro_Wr {
-  margin-bottom: 23vh;
+  margin-bottom: 19vh;
 }
 
 
@@ -397,9 +397,6 @@ button {
 
 }
 
-html {
-  font-size: 10px;
-}
 
 .pict {
   margin-top: 0;

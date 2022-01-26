@@ -130,9 +130,6 @@ p5 {
     margin-bottom: 8vh;
 }
 
-.pil-o {
-    font-size: 2.3rem;
-}
 
 .v-line {
     height: 450px;
@@ -163,6 +160,7 @@ p5 {
 .label-pillars {
     color: #050817;
     margin-top: 70px;
+    font-size: 3rem;
 }
 
 .ins-pill {
@@ -410,6 +408,21 @@ p5 {
     width: 80vw;
 }
 
+    .image-sb {
+        height: 44vh;
+        width: 59vw;
+
+
+    }
+
+    .image-sb-1 {
+        margin-top: 6vh;
+    }
+
+    .text-block-sb {
+        padding-top: 0;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -483,6 +496,11 @@ h1 {
         font-size: 0.9rem;
     }
 
+    .image-sb {
+        height: 30vh;
+
+    }
+
 }
 
 
@@ -490,7 +508,7 @@ h1 {
 @media screen and (max-width: 550px) {
 
 p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .pict {
@@ -500,7 +518,19 @@ p {
     margin-top: 0;
 }
 
+
 }
+
+@media screen and (max-width: 500px) {
+
+    .pict {
+        height: 37vh;
+        margin-top: 0;
+        width: 55vw;
+    }
+
+}
+
 
 @media screen and (max-width: 350px) {
    p {
@@ -529,8 +559,7 @@ h5 {
 
 
 @media screen and (max-width: 300px) {
-.pict {
-    width: 65vw;
-    height: 43vh;
-}
+    .pict {
+        width: 65vw;
+    }
 }

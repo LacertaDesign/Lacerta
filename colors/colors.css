@@ -87,6 +87,7 @@ a {
 h1 {
     font-weight: bold;
     font-size: 4rem;
+    z-index: 14;
     letter-spacing: 0.06em;
 }
 
@@ -193,6 +194,9 @@ h2 {
         width: 85vw;
     }
 
+    .sex {
+        width: 90vw;}
+
 
    
 
@@ -227,4 +231,8 @@ h2 {
 
 
 
+@media screen and (max-width: 500px) {
+    .Intro_Wr {
 
+        margin-right: 0vw; }
+}
