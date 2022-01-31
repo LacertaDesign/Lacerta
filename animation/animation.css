@@ -334,7 +334,7 @@ h1 {
     width: 90vw;
     padding: 20px;
     align-self: center;
-    height: 10vw;
+    height: auto;
     opacity:0;
     transition: 0.8s; /*Скорость перехода состояния элемента*/
 animation: show 0.9s 1; /* Указываем название анимации, её время и количество повторов*/
